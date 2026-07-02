@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <little>BLOG DO RYANZIN</little>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Meu Blog Pessoal</h1>
+        <p>Bem-vindo ao blog do ryanzex</p>
+    </header>
+
+    <main class="container">
+        <article class="post" data-id="post-1">
+            <h2>Sobre mim</h2>
+            <p class="post-meta">Postado em: 02 de Julho de 2026</p>
+            <p class="post-content">Vamos coerçar! Me chamo ryan, tenho 15 anos sou um menino divertido e engraçado gosto de jogar bola e resenhar com meus parceiros 
+                
+            </p>
+
+            <h2>Eu no futebol</h2>
+            <p>eu sempre estive no meio do futebol, desde os 5 anos ja jogava futsal pelo Pplaneta Bola, até que me mudei para First, onde tive a oportunidade de ir para o londrina EC, disputar o campeonato parananese, hoje em dia votei para o futsal, para o CT Angelus e a base do Ibiporã futsal</p>
+
+            <h2>Onde Moro?</h2>
+            <p>Nasci e moro em Londrina-PR</p>
+
+            <div class="interactions">
+                <button class="btn-like" onclick="interagir('post-1', 'like')">
+                    👍 <span id="likes-post-1">0</span>
+                </button>
+                <button class="btn-dislike" onclick="interagir('post-1', 'dislike')">
+                    👎 <span id="dislikes-post-1">0</span>
+                </button>
+            </div>
+
+            <div class="comments-section">
+                <h3>Comentários</h3>
+                <div class="comments-list" id="comments-list-post-1">
+                    </div>
+
+                <form class="comment-form" onsubmit="adicionarComentario(event, 'post-1')">
+                    <input type="text" id="name-post-1" placeholder="Seu nome" required>
+                    <textarea id="text-post-1" placeholder="Escreva seu comentário..." rows="3" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Mim</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
